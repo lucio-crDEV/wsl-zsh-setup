@@ -22,9 +22,9 @@ sudo apt install nodejs
 git config --global init.defaultBranch main;
 
 
-echo -e "Ingrese credenciales GIT: email\n"
+echo -e "Ingrese credenciales GIT: email"
 read email
-echo -e "Ingrese su usuario\n"
+echo -e "Ingrese su usuario"
 read user 
 
 git config --global user.email "$email"
