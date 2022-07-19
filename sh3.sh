@@ -12,8 +12,8 @@ sudo apt install zsh;
 sudo apt purge nodejs; 
 
 #solicitando version node e isntalandola
-echo "Ingrese la version de node que dese instalar\n"
-echo "\tversion: ";  read arg 
+echo "Ingrese la version de node que dese instalar"
+echo "version: ";  read arg 
 
 curl -sL https://deb.nodesource.com/setup_$arg.x | sudo -E bash -
 sudo apt install nodejs
