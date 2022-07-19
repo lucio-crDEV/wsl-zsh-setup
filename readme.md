@@ -1,7 +1,7 @@
-#Clone on WSL 
+##Clone on WSL 
 
-change permissions
+#change permissions
   sudo chmod +x sh3.sh
   
-run 
+#run 
 ./sh3.sh
