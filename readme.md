@@ -3,8 +3,7 @@
     git clone https://github.com/lucio-crDEV/wsl-zsh-setup.git
     
 ### 2. Otorgar permisos de ejecución con chmod 
-    sudo chmod +x sh3.sh
-    sudo chmod +x sh4.sh
+    sudo chmod +x sh3.sh && sudo chmod +x sh4.sh
 
 
 ### 3. Luego de ejecutar sh3.sh: 
