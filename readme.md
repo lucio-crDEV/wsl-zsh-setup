@@ -2,7 +2,7 @@
     cd ~
     git clone https://github.com/lucio-crDEV/wsl-zsh-setup.git
     
-### 2. Otorgar permisos de ejecución con chmod 
+### 2. Otorgar permisos de ejecución
     sudo chmod +x sh3.sh && sudo chmod +x sh4.sh
 
 
