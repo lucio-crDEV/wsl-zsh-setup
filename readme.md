@@ -1,6 +1,6 @@
 #### 1. Clonar en WSL 
     cd ~
-    git clone https://github.com/lucio-crDEV/wsl-node-install.git
+    git clone https://github.com/lucio-crDEV/wsl-zsh-setup.git
     
 #### 2. otorgar permisos de ejecución con chmod 
     sudo chmod +x sh3.sh
