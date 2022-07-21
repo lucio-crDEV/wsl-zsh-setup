@@ -1,31 +1,30 @@
-
 #Actualizando dependencias
 sudo apt update -y && sudo apt upgrade -y;
 
 #instalando nuevas dependencias
 sudo apt install cowsay;
 sudo apt install figlet;
-sudo apt install lolcat; 
+sudo apt install lolcat;
 sudo apt install git;
 sudo apt install neo-vim;
-sudo apt install zsh; 
-sudo apt purge nodejs; 
+sudo apt install zsh;
+sudo apt purge nodejs;
 
 #solicitando version node e isntalandola
 echo "Ingrese la version de node que dese instalar"
-echo "version: ";  read arg 
+echo "version: ";  read arg
 
 curl -sL https://deb.nodesource.com/setup_$arg.x | sudo -E bash -
 sudo apt install nodejs
 
-#configurando GIT 
+#configurando GIT
 git config --global init.defaultBranch main;
 
 
-echo -e "Ingrese credenciales GIT: email"
+echo "Ingrese credenciales GIT: email"
 read email
-echo -e "Ingrese su usuario"
-read user 
+echo "Ingrese su usuario"
+read user
 
 git config --global user.email "$email"
 git config --global user.name "$user"
@@ -35,7 +34,4 @@ git config --global user.name "$user"
 chsh -s $(which zsh)
 
 #mensaje final
-figlet "Toodo listo" |	lolcat 
-
-
-
+figlet "Toodo listo" |  lolcat
