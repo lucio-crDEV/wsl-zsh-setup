@@ -22,3 +22,5 @@
 #### *para volver a condigurar los estilos puedes ejecutar: 
     p10k configure   
 
+#### *para volver a bash normal:
+    bash
