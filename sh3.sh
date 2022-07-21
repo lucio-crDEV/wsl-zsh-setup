@@ -6,7 +6,7 @@ sudo apt install cowsay;
 sudo apt install figlet;
 sudo apt install lolcat;
 sudo apt install git;
-sudo apt install neo-vim;
+sudo apt install neovim;
 sudo apt install zsh;
 sudo apt purge nodejs;
 
