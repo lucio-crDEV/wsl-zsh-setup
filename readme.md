@@ -6,7 +6,7 @@
     sudo chmod +x sh3.sh && sudo chmod +x sh4.sh
 
 
-### 3. Luego de ejecutar sh3.sh: 
+### 3. Luego ejecutar sh3.sh: 
     ./sh3.sh
 
 ### 4. Instalar la siguiente font y configurarla en valores predeterminados de bash
@@ -17,7 +17,7 @@
 
 ### 6. Seguir los pasos y personalizar tu terminal
 
-
+##
 
 #### *para volver a condigurar los estilos puedes ejecutar: 
     p10k configure   
