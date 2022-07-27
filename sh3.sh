@@ -1,37 +1,42 @@
-#Actualizando dependencias
+# Actualizando dependencias y purgando
 sudo apt update -y && sudo apt upgrade -y;
+sudo apt purge nodejs -y;
+sudo apt purge git -y;
 
-#instalando nuevas dependencias
-sudo apt install cowsay;
-sudo apt install figlet;
-sudo apt install lolcat;
-sudo apt install git;
-sudo apt install neovim;
-sudo apt install zsh;
-sudo apt purge nodejs;
+# Instalando nuevas dependencias
+sudo apt install cowsay -y;
+sudo apt install figlet -y;
+sudo apt install lolcat -y;
+sudo apt install git -y;
+sudo apt install neovim -y;
+sudo apt install zsh -y;
+sudo apt-get install binutils -y;
+sudo apt install build-essential -y;
 
-#solicitando version node e isntalandola
-echo "Ingrese la version de node que dese instalar"
-echo "version: ";  read arg
+# solicitando version node e instalándola
+echo "Ingrese la version de node que dese instalar: \n"
+echo "\tversion: ";  read arg
 
 curl -sL https://deb.nodesource.com/setup_$arg.x | sudo -E bash -
-sudo apt install nodejs
+sudo apt install nodejs -y;
 
-#configurando GIT
+# Configurando GIT
+# Comando reprecado hay que setear main neuvamente*
 git config --global init.defaultBranch main;
 
+echo "Ingresa tus credenciales GIT..."
+echo "Email:"; read email
+echo "Usuario:"; read user
 
-echo "Ingrese credenciales GIT: email"
-read email
-echo "Ingrese su usuario"
-read user
+git config --global user.email "$email" && git config --global user.name "$user"
 
-git config --global user.email "$email"
-git config --global user.name "$user"
-
-
-#Setea zsh como bash predeterminada
+# Setea zsh como bash predeterminada
 chsh -s $(which zsh)
 
-#mensaje final
-figlet "Toodo listo" |  lolcat
+# Mensaje final
+
+figlet "Que comience el juego" | cowsay -f tux -n | lolcat -a -s 1400
+
+# Devolviendo versiones instalas de node y npm
+echo "Versión NodeJS | " $(node -v)| lolcat -a -s 2000
+echo "Versión NPM | " $(npm -v) | lolcat -a -s 2000
