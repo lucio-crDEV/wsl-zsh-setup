@@ -15,14 +15,14 @@ sudo apt install build-essential -y;
 
 # solicitando version node e instalándola
 echo "Ingrese la version de node que dese instalar: \n"
-echo "\tversion: ";  read arg
+echo "version: ";  read arg
 
 curl -sL https://deb.nodesource.com/setup_$arg.x | sudo -E bash -
 sudo apt install nodejs -y;
 
 # Configurando GIT
-# Comando reprecado hay que setear main neuvamente*
-git config --global init.defaultBranch main;
+# Comando reprecado hay que setear main nuevamente*
+sudo git config --global init.defaultBranch main;
 
 echo "Ingresa tus credenciales GIT..."
 echo "Email:"; read email
