@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Función para mostrar la barra de progreso
 sudo apt install pv -y
 sleep 1

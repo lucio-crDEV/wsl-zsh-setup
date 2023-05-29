@@ -1,3 +1,4 @@
+#!/bin/bash
 # Actualizando dependencias
 sudo apt update -y && sudo apt upgrade -y
 
