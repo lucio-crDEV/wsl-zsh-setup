@@ -1,6 +1,9 @@
 #!/bin/bash
 
-# Función para mostrar barra de progreso
+
+# Función para mostrar la barra de progreso
+sudo apt install pv -y
+sleep 1
 show_progress() {
   echo -n "$1" | pv -p -s $2 -w 80 -N "$3" --color "green" > /dev/null
   echo
@@ -13,7 +16,7 @@ sudo apt update -y && sudo apt upgrade -y;
 show_progress "Eliminando Node.js..." 50 "Versiones de Node.js anteriores desinstaladas"
 sudo apt purge nodejs -y;
 
-show_progress "Reseteando Git..." 50 "Git desinstalado"
+show_progress "Eliminando Git..." 50 "Git desinstalado"
 sudo apt purge git -y;
 
 # Instalando nuevas dependencias
@@ -21,7 +24,7 @@ show_progress "Instalando dependencias..." 100 "Instalado"
 sudo apt install cowsay figlet lolcat git neovim zsh binutils build-essential python3-pip -y && pip3 install virtualenv flask django && sudo npm install -g @angular/cli && sudo npm install -g @ionic/cli;
 
 # Solicitando versión de Node.js e instalándola
-echo "Ingrese la versión de Node.js que desea instalar: \n"
+echo "Ingrese la versión de Node.js que desea instalar:"
 echo "Versión: ";  read arg
 curl -sL https://deb.nodesource.com/setup_$arg.x | sudo -E bash -
 sudo apt install nodejs -y;
@@ -47,6 +50,6 @@ echo "Versión NPM | " $(npm -v) | lolcat -a -s 2000
 
 #resetear para aplicar los cambios
 
-sleep 6
 echo "la terminal se reiniciara para aplicar los cambios, ahora debes ejecutar el siguiente script con permisos sudo | " $(npm -v) | lolcat -a -s 2000
+sleep 6
 reset
