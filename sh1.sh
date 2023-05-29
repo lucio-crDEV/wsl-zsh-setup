@@ -18,6 +18,9 @@ sudo apt purge nodejs -y;
 show_progress "Eliminando Git..." 50 "Git desinstalado"
 sudo apt purge git -y;
 
+# Actualizar el PATH
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+
 # Instalando nuevas dependencias
 show_progress "Instalando dependencias..." 100 "Instalado"
 sudo apt install cowsay figlet lolcat git neovim zsh binutils build-essential python3-pip -y && pip3 install virtualenv flask django && sudo npm install -g @angular/cli && sudo npm install -g @ionic/cli;
