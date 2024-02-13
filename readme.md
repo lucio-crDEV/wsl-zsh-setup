@@ -2,6 +2,14 @@
 
 Este repositorio contiene dos scripts de configuración para Windows Subsystem for Linux (WSL) y Zsh. Estos scripts te ayudarán a instalar y configurar las dependencias necesarias en tu entorno WSL.
 
+### Previo:
+Para el siguiente tema de zsh necesitas esta fuente instalada y configurada para la terminal
+---> MesloLGS NF
+- [MesloLGS NF Regular.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf)
+- [MesloLGS NF Bold.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf)
+- [MesloLGS NF Italic.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf)
+- [MesloLGS NF Bold Italic.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf)
+
 ## Pasos para configurar WSL y ejecutar los scripts
 
 ### 1. Instalar WSL

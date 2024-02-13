@@ -17,19 +17,12 @@ if [ "$SHLVL" = 1 ]; then
 fi
 
 # Reiniciar la terminal o abrir una nueva sesión de Zsh para aplicar los cambios
-echo 'Ahora debes configurar el tema ingresando "p10k configure" en tu terminal \n(recuerda tener instalada la fuente tipográfica necesaria)' | lolcat -a -s 3000 
+echo 'Cada vez que quieras configurar el tema utiliza "p10k configure" en tu terminal \n(recuerda tener configurada la fuente necesaria para el tema)\n----> MesloLGS NF Regular.ttf' | lolcat -a -s 3000 
 sleep 5
-echo "\nLa terminal se reiniciara ahora para aplicar los cambios"  | lolcat -a -s 3000 
+echo "\nEn ocasiones debes ejecutar dos veces este archivo para aplicar los cambios corectamente"  | lolcat -a -s 3000 
 sleep 3
 echo "Para más duda revisa el readme.md del repositorio, éxito!" |  lolcat -a -s 3000
-slep 1
-echo '"p10k configure"' |  lolcat -a -s 3000
-echo '"p10k configure"' |  lolcat -a -s 3000
-echo '"p10k configure"' |  lolcat -a -s 3000
-echo '"p10k configure"' |  lolcat -a -s 3000
-echo '"p10k configure"' |  lolcat -a -s 3000
-sleep 9
-reset
-
+sleep 6
+echo "si no te aparece el menu de configuracion escribe 'zsh' para configurar" |  lolcat -a -s 3000
+sleep 4
 # Carga la configuración de Zsh sin iniciar una nueva sesión
-source ~/.zshrc
