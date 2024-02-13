@@ -15,6 +15,7 @@ Para el siguiente tema de zsh necesitas esta fuente instalada y configurada para
 ### 1. Instalar WSL
 
 Sigue las instrucciones de Microsoft para instalar WSL en tu sistema. Puedes encontrar información detallada en el siguiente enlace: [Instalación de WSL en Windows](https://docs.microsoft.com/es-es/windows/wsl/install-win10)
+- Es recomendable realizar esta actualización (Paquete de actualización del kernel de Linux en WSL 2 para máquinas x64)[https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi]
 
 ### 2. Clonar el repositorio
 
