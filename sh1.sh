@@ -23,7 +23,7 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 
 # Instalando nuevas dependencias
 show_progress "Instalando dependencias..." 100 "Instalado"
-sudo apt install cowsay figlet lolcat git neovim zsh binutils build-essential python3-pip -y && pip3 install virtualenv flask django && sudo npm install -g @angular/cli && sudo npm install -g @ionic/cli;
+sudo apt install cowsay figlet lolcat git neovim zsh binutils build-essential python3-pip -y && pip3 install virtualenv flask django python3.10-venv && sudo npm install -g @angular/cli && sudo npm install -g @ionic/cli;
 
 # Solicitando versión de Node.js e instalándola
 echo "Ingrese la versión de Node.js que desea instalar:"
