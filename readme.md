@@ -57,3 +57,8 @@ Ahora deberías tener WSL configurado con Zsh y las dependencias necesarias inst
 Para más información y detalles sobre los scripts, revisa los archivos de script1.sh y script2.sh en este repositorio.
 
 ¡Que disfrutes usando WSL con Zsh!
+
+
+#### Bonus: Como cambiar de disco WSL (de C: a D: por ejemplo...)
+
+Les dejo este link de utilidad https://dev.to/equimancho/mover-el-sistema-de-archivos-de-wsl-a-otro-disco-3fbi
